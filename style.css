@@ -1,0 +1,244 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+   }
+
+body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 40px 20px;
+    }
+
+.cv-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 320px 1fr;
+ }
+
+.sidebar {
+    background: #34495e;
+    color: white;
+    padding: 40px 30px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stage-badge {
+    display: inline-block;
+    background: #667eea;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.sidebar h3 {
+    color: #667eea;
+    font-size: 1.1rem;
+    margin: 25px 0 15px;
+    padding-bottom: 8px;
+    /* border-bottom: 2px solid rgba(102, 126, 234, 0.5); */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar p, .sidebar li {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ecf0f1;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sidebar li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.contact-item i {
+    color: #667eea;
+    width: 20px;
+}
+
+.main-content {
+    padding: 40px 45px;
+    background: #ffffff;
+}
+
+.header {
+    margin-bottom: 35px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.header .subtitle {
+    color: #667eea;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.section h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section h2 i {
+    color: #667eea;
+    font-size: 1.3rem;
+}
+
+.section p {
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+ }
+
+.timeline-item {
+    margin-bottom: 25px;
+    padding-left: 25px;
+    border-left: 3px solid #667eea;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #667eea;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    box-shadow: 0 0 0 3px #667eea;
+}
+
+.timeline-item h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 1.05rem;
+}
+
+.timeline-item .period {
+    color: #667eea;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.timeline-item ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.timeline-item li {
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.skill-item {
+    background: #f8f9fa;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 25px 45px;
+    grid-column: 1 / -1;
+}
+
+footer h3 {
+    color: #667eea;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #667eea;
+}
+
+.social-links i {
+    font-size: 1.2rem;
+}
+
+       
