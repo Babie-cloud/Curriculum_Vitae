@@ -8,7 +8,9 @@ body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: 40px 20px;
     }
-
+.text-white { 
+    color : white;
+}
 .cv-container {
     max-width: 1000px;
     margin: 0 auto;
